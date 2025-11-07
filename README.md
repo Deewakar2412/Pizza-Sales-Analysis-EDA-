@@ -172,12 +172,11 @@ Based on the analysis, the following strategic recommendations were provided to 
     * Maintain a high stock of the **Top 3 ingredients** (Garlic, Tomatoes, Red Onions) to avoid critical stockouts during peak times.
 
 ---
-<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
+## 🚀 How to Use This Project
 
-## 👤 Author
+Follow the steps below to explore and run this end-to-end data analysis project:
 
-**Deewakar Kumar**
-* 📧 Email: `deewakar2412@gmail.com`
-* 📍 Bokaro, Jharkhand, India
-* [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deewakarkumar2412/) 
-* [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Deewakar2412)
+### 📂 1. Clone the Repository
+```bash
+git clone [https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git](https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git)
+cd customer-shopping-behavior-analysis
