@@ -171,16 +171,14 @@ Based on the analysis, the following strategic recommendations were provided to 
     * Ensure a consistent stock of ingredients for the **"Classic"** category (the most popular).
     * Maintain a high stock of the **Top 3 ingredients** (Garlic, Tomatoes, Red Onions) to avoid critical stockouts during peak times.
 
----
 ## 🚀 How to Use This Project
 
 Follow the steps below to explore and run this end-to-end data analysis project:
 
 ### 📂 1. Clone the Repository
 ```bash
-git clone [https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git]
+git clone [https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git](https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git)
 cd customer-shopping-behavior-analysis
----
 
 ## 👤 Author
 
