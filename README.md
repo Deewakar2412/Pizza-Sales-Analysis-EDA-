@@ -1,99 +1,62 @@
-# 📈 Pizza Sales Analysis
+# 🍕 Pizza Sales Analysis
 
-## 📌 Project Overview
-This project analyzes transactional sales data from a pizza store to identify key business insights, trends, and Key Performance Indicators (KPIs). The goal is to help management make informed, data-driven decisions related to sales, marketing, and operations.
-
----
-
-## 🎯 Business Objectives
-* Identify overall revenue, total pizzas sold, and total number of orders.
-* Determine sales distribution by pizza category, size, and type.
-* Analyze time-based trends in sales (daily, monthly, and hourly).
-* Highlight best-selling and least-selling pizzas by revenue and quantity.
-* Understand customer purchasing behavior through Average Order Value (AOV) and Average Pizza per Order.
-* Provide visualization dashboards for effective decision-making.
+_Analyzing transactional sales data to drive strategic decisions for marketing, operations, and inventory using Python (Pandas, Matplotlib, Seaborn) in Google Colab._
 
 ---
 
-## 📊 Key Performance Indicators (KPIs)
-1.  **Total Revenue:** The sum of all `total_price`.
-2.  **Total Pizzas Sold:** The sum of all `quantity`.
-3.  **Total Orders:** The count of unique `order_id`.
-4.  **Average Order Value (AOV):** Total Revenue / Total Orders
-5.  **Average Pizzas per Order:** Total Pizzas Sold / Total Orders
+## 📌 Table of Contents
+- <a href="#overview">Overview</a>
+- <a href="#business-problem">Business Problem</a>
+- <a href="#dataset">Dataset</a>
+- <a href="#tools--technologies">Tools & Technologies</a>
+- <a href="#project-structure">Project Structure</a>
+- <a href="#data-preparation">Data Preparation</a>
+- <a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
+- <a href="#research-questions--key-findings">Research Questions & Key Findings</a>
+- <a href="#key-visualizations">Key Visualizations</a>
+- <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#final-recommendations">Final Recommendations</a>
+- <a href="#author--contact">Author & Contact</a>
 
 ---
+<h2><a class="anchor" id="overview"></a>Overview</h2>
 
-## 💾 Data Source
-The analysis is based on the `pizza_sales.csv` dataset, which contains transactional data.
-
-* **Key Fields:**
-    * `order_id`: Unique identifier for each order.
-    * `pizza_name`: Name of the pizza sold.
-    * `quantity`: Number of pizzas sold per order.
-    * `total_price`: Total revenue for the transaction.
-    * `order_date`, `order_time`: Timestamps for time-based analysis.
-    * `pizza_category`, `pizza_size`: Attributes for classification.
-    * `pizza_ingredients`: List of ingredients for each pizza.
+This project analyzes a year's worth of transactional sales data from a pizza store. The goal is to evaluate sales performance, identify key trends, and provide actionable insights to management. This analysis serves as a complete workflow, starting from a Business Requirements Document (BRD) and ending with data-driven recommendations to optimize sales, marketing, and operations.
 
 ---
+<h2><a class="anchor" id="business-problem"></a>Business Problem</h2>
 
-## 🔧 Tools & Libraries
-* **Python**
-* **Pandas:** For data manipulation and analysis.
-* **Matplotlib & Seaborn:** For data visualization.
-* **Numpy:** For numerical operations.
-* **Jupyter Notebook:** For interactive analysis and reporting.
-
----
-
-## 💡 Analysis & Key Findings
-
-### 1. Ingredient Analysis
-* The most frequently used ingredients across all pizzas are **Garlic, Tomatoes, and Red Onions**. This insight is crucial for inventory management.
-
-### 2. Time-Based Trends
-* **Daily:** Sales revenue peaks towards the end of the week, with **Fridays, Saturdays, and Sundays** being the strongest sales days.
-* **Hourly:** Sales show a clear peak during the evening rush hour, typically between **5:00 PM and 7:00 PM**.
-* **Monthly:** Sales data indicates fluctuations throughout the year, with **July** showing the highest revenue and order volumes, likely due to promotional campaigns.
-
-
-
-### 3. Sales by Category & Size
-* **Category:** The **"Classic"** pizza category is the best-seller in terms of quantity sold (14,888), followed by "Supreme" (11,987), "Veggie" (11,649), and "Chicken" (11,050).
-* **Size:** **Large (L)** size pizzas contribute the highest revenue, indicating a preference for larger sizes or group orders.
-
-### 4. Top & Bottom Performers
-* **Best-Sellers:** The analysis identified the top 5 best-selling pizzas by quantity, providing clear insights into customer preferences.
-* **Least-Sellers:** The bottom 5 least-selling pizzas were also identified, highlighting products that may need menu optimization.
-
-
+The pizza store management wanted to move from guesswork to a data-driven strategy. The project was designed to answer several key business questions:
+- What are our busiest days and times?
+- Which pizzas should we promote, and which ones are underperforming?
+- How can we optimize our menu and inventory?
+- What are our key performance indicators (KPIs) for sales?
 
 ---
+<h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-## 🚀 Business Recommendations
-Based on the analysis, management can leverage these insights to:
-
-1.  **Optimize Staffing & Operations:** Focus marketing efforts and increase staffing during peak sales periods (weekends and evenings) to maximize revenue and ensure operational efficiency.
-2.  **Menu Optimization:** Analyze the performance of the least-selling pizzas. Management should consider modifying the recipes, running targeted promotions, or removing them from the menu to reduce waste and simplify operations.
-3.  **Inventory Management:** Ensure a stable supply of the most-used ingredients (Garlic, Tomatoes, Red Onions) to avoid stockouts, especially during peak seasons.
+- **Source:** `pizza_sales.csv`
+- **Rows:** 48,620
+- **Timeframe:** One year of transactions.
+- **Key Fields:**
+    - `order_id`: Unique identifier for each order.
+    - `pizza_name`: Name of the pizza.
+    - `quantity`: Number of pizzas sold in the transaction.
+    - `total_price`: Total revenue for the transaction.
+    - `order_date`: Date the order was placed.
+    - `order_time`: Time the order was placed.
+    - `pizza_size`: Size of the pizza (S, M, L, XL, XXL).
+    - `pizza_category`: Category of the pizza (Classic, Supreme, Veggie, Chicken).
+    - `pizza_ingredients`: List of ingredients for each pizza.
 
 ---
+<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
 
-## ⚙️ How to Use This Project
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/Pizza-Sales-Analysis.git](https://github.com/your-username/Pizza-Sales-Analysis.git)
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd Pizza-Sales-Analysis
-    ```
-3.  **Install the required libraries:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Run the Jupyter Notebook:**
-    ```bash
-    jupyter notebook Pizza_Sales_Analysis.ipynb
-    ```
+- **Google Colab:** The cloud-based notebook environment for analysis.
+- **Python:** The core language for analysis.
+- **Pandas:** For data loading, cleaning, and manipulation.
+- **NumPy:** For numerical operations.
+- **Matplotlib & Seaborn:** For data visualization.
+
+---
+<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
