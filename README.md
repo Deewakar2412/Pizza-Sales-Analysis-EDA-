@@ -60,3 +60,119 @@ The pizza store management wanted to move from guesswork to a data-driven strate
 
 ---
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
+
+```
+vendor-performance-analysis/
+│
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── Vendor Performance Report.pdf
+│
+├── notebooks/                  # Jupyter notebooks
+│   ├── exploratory_data_analysis.ipynb
+│   ├── vendor_performance_analysis.ipynb
+│
+├── scripts/                    # Python scripts for ingestion and processing
+│   ├── ingestion_db.py
+│   └── get_vendor_summary.py
+│
+├── dashboard/                  # Power BI dashboard file
+│   └── vendor_performance_dashboard.pbix
+```
+
+---
+
+---
+<h2><a class="anchor" id="data-preparation"></a>Data Preparation</h2>
+
+- **Date/Time Conversion:** Converted `order_date` to datetime objects (format `%d-%m-%Y`) and `order_time` to time objects.
+- **Feature Engineering:** Created new columns for analysis: `day_of_week`, `hour_of_day`, and `month`.
+- **Text Parsing:** Parsed the `pizza_ingredients` string (e.g., "Ingredient1, Ingredient2") into a list of individual ingredients to enable frequency analysis.
+
+---
+<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Exploratory Data Analysis (EDA)</h2>
+
+The first step of the analysis was to calculate the high-level Key Performance Indicators (KPIs) for the business.
+
+- **Total Revenue:** $817,860.05
+- **Total Pizzas Sold:** 49,574
+- **Total Orders:** 21,350
+- **Average Order Value (AOV):** $38.31
+- **Average Pizzas per Order:** 2.32
+
+---
+<h2><a class="anchor" id="research-questions--key-findings"></a>Research Questions & Key Findings</h2>
+
+1.  **When are the busiest times? (Time-Based Trends)**
+    * **Hourly Trend:** Sales start slow, pick up at lunch (12 PM - 1 PM), and **peak during the evening rush (5 PM - 7 PM)**.
+    * **Daily Trend:** The busiest days are **Friday and Saturday**, with Friday being the highest revenue-generating day.
+    * **Monthly Trend:** Sales are consistent, with a notable **peak in July** and a dip in October.
+
+2.  **What are our most/least popular products? (Product & Category Insights)**
+    * **By Category:** The **"Classic"** category is the clear winner, driving the most orders (14,888 pizzas) and revenue.
+    * **By Size:** The **"Large"** size is the most popular, accounting for over 40% of pizzas sold.
+    * **Top 5 Best-Sellers:** 1. The Classic Deluxe Pizza, 2. The Barbecue Chicken Pizza, 3. The Hawaiian Pizza.
+    * **Bottom 5 Worst-Sellers:** 1. The Brie Carre Pizza, 2. The Mediterranean Pizza, 3. The Calabrese Pizza.
+
+3.  **How can we optimize inventory? (Ingredient Analysis)**
+    * **Top Ingredients:** The most frequently used ingredients are **Garlic, Tomatoes, and Red Onions**. This insight is crucial for supply chain management.
+
+---
+<h2><a class="anchor" id="key-visualizations"></a>Key Visualizations</h2>
+
+The full notebook contains all visualizations. Below are some of the key charts that drove the final recommendations.
+
+**Total Revenue by Day of the Week**
+*(This chart clearly shows Friday and Saturday as the peak sales days.)*
+`![Sales by Day of Week](images/daily_sales_chart.png)`
+
+**Total Revenue by Hour of the Day**
+*(This chart highlights the critical 12-1 PM lunch spike and the 5-7 PM evening rush.)*
+`![Sales by Hour](images/hourly_sales_chart.png)`
+
+**Top 5 Best-Selling Pizzas by Quantity**
+*(This chart identifies the "hero" products for marketing.)*
+`![Top 5 Pizzas](images/top_5_pizzas_chart.png)`
+
+---
+<h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
+
+This project was developed using **Google Colab**.
+
+1.  **Open in Google Colab:**
+    * Download the `Pizza_Sales_EDA.ipynb` file from this repository.
+    * Go to [https://colab.research.google.com/](https://colab.research.google.com/) and upload the notebook.
+    * *(Alternatively, if your repository is public, you can open it directly by replacing `github.com` with `colab.research.google.com/github/` in your repository's URL.)*
+
+2.  **Upload the Data:**
+    * In the Colab environment, find the **"Files"** tab on the left-hand sidebar.
+    * Click **"Upload to session storage"** and select the `pizza_sales.csv` file from your computer.
+    * **Important:** Ensure the file path in the notebook (e.g., `pd.read_csv('/content/pizza_sales.csv')`) matches the uploaded file's location.
+
+3.  **Run the Analysis:**
+    * Run the cells in the notebook sequentially to see the complete analysis.
+    * All required libraries (Pandas, Matplotlib, Seaborn) are pre-installed in Google Colab.
+
+---
+<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
+
+Based on the analysis, the following strategic recommendations were provided to management:
+
+1.  **Optimize Staffing:** Increase staff levels during peak hours (**5 PM - 7 PM**) and on peak days (**Fridays and Saturdays**) to meet customer demand, reduce wait times, and maximize revenue.
+2.  **Menu & Marketing Strategy:**
+    * Heavily promote the **Top 5 Best-Selling Pizzas** (e.g., "Classic Deluxe") as "Customer Favorites."
+    * Analyze the **Bottom 5 Worst-Selling Pizzas**. Consider removing "The Brie Carre Pizza" from the menu to reduce ingredient waste and simplify kitchen operations.
+3.  **Inventory Management:**
+    * Ensure a consistent stock of ingredients for the **"Classic"** category (the most popular).
+    * Maintain a high stock of the **Top 3 ingredients** (Garlic, Tomatoes, Red Onions) to avoid critical stockouts during peak times.
+
+---
+<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
+
+**[Your Name Here]**
+Data Analyst
+📧 Email: [Your Email Here]
+🔗 [LinkedIn]([Your LinkedIn Profile URL])
+🔗 [GitHub]([Your GitHub Profile URL])
+```eof
