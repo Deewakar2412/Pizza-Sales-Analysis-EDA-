@@ -1,6 +1,17 @@
-# 🍕 Pizza Sales Analysis
+<div align="center">
+  <h1 align="center">🍕 Pizza Sales Analysis 🍕</h1>
+  <p align="center">
+    An in-depth exploratory data analysis of transactional sales data to drive strategic decisions for marketing, operations, and inventory.
+  </p>
+</div>
 
-_Analyzing transactional sales data to drive strategic decisions for marketing, operations, and inventory using Python (Pandas, Matplotlib, Seaborn) in Google Colab._
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn"/>
+  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Google Colab"/>
+</p>
 
 ---
 
