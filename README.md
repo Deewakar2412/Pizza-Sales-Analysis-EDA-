@@ -46,7 +46,7 @@ The pizza store management wanted to move from guesswork to a data-driven strate
 ---
 <h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-- **Source:** `pizza_sales.csv`
+- **Source:** `Data/pizza_sales (3).csv`
 - **Rows:** 48,620
 - **Timeframe:** One year of transactions.
 - **Key Fields:**
