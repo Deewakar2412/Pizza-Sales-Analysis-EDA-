@@ -178,5 +178,14 @@ Follow the steps below to explore and run this end-to-end data analysis project:
 
 ### 📂 1. Clone the Repository
 ```bash
-git clone [https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git](https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git)
+git clone [https://github.com/Deewakar2412/customer-shopping-behavior-analysis.git]
 cd customer-shopping-behavior-analysis
+---
+
+## 👤 Author
+
+**Deewakar Kumar**
+* 📧 Email: `deewakar2412@gmail.com`
+* 📍 Bokaro, Jharkhand, India
+* [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deewakarkumar2412/) 
+* [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Deewakar2412)
