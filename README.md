@@ -87,9 +87,6 @@ pizza-sales-analysis/
 ├── Pizza_Sales_EDA.ipy
 
 ```
-
----
-
 ---
 <h2><a class="anchor" id="data-preparation"></a>Data Preparation</h2>
 
