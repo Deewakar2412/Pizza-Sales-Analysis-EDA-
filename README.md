@@ -73,23 +73,19 @@ The pizza store management wanted to move from guesswork to a data-driven strate
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
 ```
-vendor-performance-analysis/
+pizza-sales-analysis/
 │
 ├── README.md
-├── .gitignore
-├── requirements.txt
-├── Vendor Performance Report.pdf
 │
-├── notebooks/                  # Jupyter notebooks
-│   ├── exploratory_data_analysis.ipynb
-│   ├── vendor_performance_analysis.ipynb
+├── Data/                   
+│   ├── pizza_sales (3).csv
+│   ├── pizza_sales_excel_file (2).xlsx
 │
-├── scripts/                    # Python scripts for ingestion and processing
-│   ├── ingestion_db.py
-│   └── get_vendor_summary.py
+├── Main Business Requirements Doc.pdf    
+│   └── Pizza_Sales_EDA.ipynb
 │
-├── dashboard/                  # Power BI dashboard file
-│   └── vendor_performance_dashboard.pbix
+├── Pizza_Sales_EDA.ipy
+
 ```
 
 ---
